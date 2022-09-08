@@ -1,0 +1,26 @@
+<div class="app">
+  <div class="create-user">
+    <auth-form (submitted)="createUser($event)">
+      <h3>
+        Create User
+      </h3>
+      <button class="display button-gap" type="submit">
+        Create User
+      </button>
+    </auth-form>
+  </div>
+
+  <div class="login">
+    <auth-form (submitted)="loginUser($event)">
+      <h3>Login</h3>
+      <button class="display button-gap" type="submit">
+        Login
+      </button>
+      <auth-remember 
+        class="remember-me"
+        (checked)="rememberUser($event)">
+      </auth-remember>
+    </auth-form>
+  </div>
+
+</div>
